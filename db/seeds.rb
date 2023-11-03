@@ -7,18 +7,17 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-ActiveRecord::Base.transaction do
+
   10 .times do |i|
-    user = Post.create(
-      title: Faker::Movies::HarryPotter.character,
+    user = User.create(
+      name: Faker::Movies::HarryPotter.character,
+      email: Faker::Internet.email,
       password: 'password',
     )
     #puts "User #{user.id} create successfully"
     puts "User #{i + 1} create successfully"
   end
-end
 
-ActiveRecord::Base.transaction do
   h = 0
   10 .times do |i|
     h = h  +  1
@@ -30,7 +29,7 @@ ActiveRecord::Base.transaction do
     #puts "User #{user.id} create successfully"
     puts "Post #{i + 1} create successfully"
   end
-end
+
 
 
 

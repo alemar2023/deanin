@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="RM-232.10203.15">
+  <component name="dataSourceStorageLocal" created-in="RM-232.10072.21">
     <data-source name="xmall_dev@localhost" uuid="aea2e954-1975-49e8-9e1c-ed63547d9a78">
       <database-info product="PostgreSQL" version="14.9 (Ubuntu 14.9-0ubuntu0.22.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="14.9" exact-driver-version="42.6">
         <identifier-quote-string>&quot;</identifier-quote-string>

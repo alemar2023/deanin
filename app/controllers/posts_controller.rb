@@ -3,15 +3,15 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.order(id: :desc)
   end
 
   # GET /posts/1 or /posts/1.json
   def show
     # la modalità estesa dell procedura di update sono le seguenti 3 righe
-    views = @post.views + 1
-    @post.views = views
-    @post.save
+    #views = @post.views + 1
+    #@post.views = views
+    #@post.save
     # la modalità contratta del metodo update in un riga (uguale alle tre sopra è questa qui)
 
     @post.update(views: @post.views + 1 )
